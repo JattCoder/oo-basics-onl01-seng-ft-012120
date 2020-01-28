@@ -1,20 +1,12 @@
 class Book
-  def initialized=(booktitle)
-    @title = booktitle
-    @author = "Agatha Christie"
-    @pages = 272
+  def title=(booktitle)
+    @title
   end
   def title
     @title
   end
-  def author
-    @author
-  end
-  def page_count
-    @pages
-  end
 end
-book = Book.new("And Then There Were None")
-book.title
+book = Book.new
+book.title("And Then There Were None")
 book.author
 book.page_count
