@@ -8,5 +8,3 @@ class Book
 end
 book = Book.new("gets initialized with a title")
 book.title
-book.author
-book.page_count
