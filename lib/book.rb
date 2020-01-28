@@ -1,12 +1,12 @@
 class Book
-  def title=(booktitle)
-    @title
+  def initialized(booktitle)
+    @title = booktitle
   end
   def title
     @title
   end
 end
-book = Book.new
-book.title("And Then There Were None")
+book = Book.new("gets initialized with a title")
+book.title
 book.author
 book.page_count
