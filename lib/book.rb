@@ -5,10 +5,10 @@ class Book
   def title
     @title
   end
-  def author
-    @author = "Agatha Christie"
+  def author=(bookauthor)
+    @author = bookauthor
   end
 end
 book = Book.new("gets initialized with a title")
 book.title
-book.author
+book.author = "Agatha Christie"
