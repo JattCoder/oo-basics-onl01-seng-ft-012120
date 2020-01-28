@@ -8,6 +8,9 @@ class Book
   def author=(bookauthor)
     @author = bookauthor
   end
+  def author
+    @author
+  end
 end
 book = Book.new("gets initialized with a title")
 book.title
