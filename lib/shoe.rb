@@ -18,22 +18,23 @@ class Shoe
     @size
   end
   def material=(material)
-    @material
+    @material = material
   end
   def material
     @material
   end
-  def condition=(condition)
-    @condition
+  def condition=(shoecondition)
+    if shoecondition == "old"
+      @condition = "new"
+    else
+      @condition = shoecondition
+    end
   end
   def condition
-    if @condition == "old"
-      @condition = "new"
-    end
     @condition
   end
   def cobble
-    @cobble = "Your shoe is as good as new!"
+    puts "Your shoe is as good as new!"
   end
 end
 shoe = Shoe.new("Adidas")
